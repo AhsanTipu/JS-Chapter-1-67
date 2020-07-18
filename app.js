@@ -1519,8 +1519,136 @@
 //         l2[z]=document.getElementById("f2").value;
 //         var cell1=row.insertCell(0);
 //         var cell2=row.insertCell(1);
-//         cell1.innerHTML = document.write(l1[z]) ;
+//         var cell3=row.insertCell(2);
+//         var cell4=row.insertCell(3);
+
+//         cell1.innerHTML = l1[z] ;
 //         cell2.innerHTML =l2[z];
+//         cell1.innerHTML = <button>Edit</button> ;
+//         cell2.innerHTML =l2[z];
+
 //         y++;
 //         z++;
 // }
+
+// CHAPTER 52-57==========================
+
+
+// ***** Q1 (Modal) *** //
+
+// var modal = document.getElementById("myModal");
+
+
+// var img = document.getElementById("myImg");
+// var modalImg = document.getElementById("img01");
+// var captionText = document.getElementById("caption");
+// img.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+// var img2 = document.getElementById("myImg2");
+// var modalImg = document.getElementById("img01");
+// var captionText = document.getElementById("caption");
+// img2.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+// var img3 = document.getElementById("myImg3");
+// var modalImg = document.getElementById("img01");
+// var captionText = document.getElementById("caption");
+// img3.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+// var img4 = document.getElementById("myImg4");
+// var modalImg = document.getElementById("img01");
+// var captionText = document.getElementById("caption");
+// img4.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+
+
+// var span = document.getElementsByClassName("close")[0];
+
+// span.onclick = function() { 
+//   modal.style.display = "none";
+// }
+
+//**** TASK 2 ***//
+
+// function zoomin(){
+// var a = document.getElementById("para");
+// a.style.fontSize="25px";
+// }
+// function zoomout(){
+//     var a = document.getElementById("para");
+//     a.style.fontSize="15px";
+//     }
+
+// CHAPTER 58-67================================================
+//Q1
+
+//Part (i)
+// const mainContent = document.querySelector('#main-content');
+
+// //part (ii)
+// console.log(mainContent.children, 'Main Content all child elements');
+
+// //part (iii)
+// const renderElements = document.querySelectorAll('.render');
+// document.write(`<h2>Task # 01</h2> <h4>Part iii</h4>`);
+// renderElements.forEach((element) =>
+//   document.write(`${element.innerHTML} <br/>`)
+// );
+
+// //part (iv)
+// document.querySelector('#first-name').value = 'Bilal';
+
+// //part (v)
+// document.querySelector('#last-name').value = 'Mir';
+// document.querySelector('#email').value = 'bilalmir135@gmail.com';
+
+// //Task # 02
+
+// //part (i)
+// document.write(`<h2>Task # 02</h2> <h4>Part i</h4>`);
+// document.write(
+//   `Node type = ${document.querySelector('#form-content').nodeType}`
+// );
+
+// //part (ii)
+// document.write(`<h4>Part ii</h4>`);
+// const lastName = document.querySelector('#lastName');
+// document.write(`Node type = ${lastName.nodeType}<br/>`);
+// const lastNameChilds = lastName.childNodes;
+// lastNameChilds.forEach((child) =>
+//   document.write(`Node type of its child = ${child.nodeType}`)
+// );
+
+// //part (iii)
+// document.write(`<h4>Part iii</h4>`);
+// document.write(`Before update = ${lastName.textContent}<br/>`);
+// lastName.textContent = 'Hello';
+// document.write(`After update = ${lastName.textContent}`);
+
+// //part (iv)
+// const mainContentFirstChild = mainContent.firstElementChild;
+// console.log(mainContentFirstChild, 'Main Content First Child');
+// const mainContentLastChild = mainContent.lastElementChild;
+// console.log(mainContentLastChild, 'Main Content Last Child');
+
+// //part (v)
+// const lastName_Next_Sibling = lastName.nextSibling;
+// console.log(lastName_Next_Sibling, 'last Name Next Sibling');
+// const lastName_Previous_Sibling = lastName.previousSibling;
+// console.log(lastName_Previous_Sibling, 'last Name Previous Sibling');
+
+// //pasrt (vi)
+// const email = document.querySelector('#email');
+// console.log(email.parentNode, 'Email Parent Node');
+// console.log(email.nodeType, 'Email Node type');
